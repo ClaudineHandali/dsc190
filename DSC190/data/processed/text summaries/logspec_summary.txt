@@ -1,0 +1,83 @@
+=== Robustness: log–log FE regression ===
+
+Formula: log_ev_per_1000 ~ log_ports_per_100k + Year_trend + C(State)
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:        log_ev_per_1000   R-squared:                       0.993
+Model:                            OLS   Adj. R-squared:                  0.991
+Method:                 Least Squares   F-statistic:                     414.2
+Date:                Wed, 10 Dec 2025   Prob (F-statistic):           2.00e-31
+Time:                        13:28:28   Log-Likelihood:                 229.32
+No. Observations:                 200   AIC:                            -354.6
+Df Residuals:                     148   BIC:                            -183.1
+Df Model:                          51                                         
+Covariance Type:              cluster                                         
+==============================================================================================
+                                 coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------------------
+Intercept                     -1.0289      0.307     -3.348      0.001      -1.631      -0.427
+C(State)[T.Alaska]             0.5920      0.020     30.179      0.000       0.554       0.630
+C(State)[T.Arizona]            1.5613      0.098     16.003      0.000       1.370       1.753
+C(State)[T.Arkansas]          -0.1686      0.015    -11.193      0.000      -0.198      -0.139
+C(State)[T.California]         2.2726      0.241      9.411      0.000       1.799       2.746
+C(State)[T.Colorado]           1.5366      0.192      8.006      0.000       1.160       1.913
+C(State)[T.Connecticut]        1.0967      0.135      8.111      0.000       0.832       1.362
+C(State)[T.Delaware]           0.9965      0.094     10.569      0.000       0.812       1.181
+C(State)[T.Florida]            1.3440      0.095     14.220      0.000       1.159       1.529
+C(State)[T.Georgia]            1.0278      0.113      9.113      0.000       0.807       1.249
+C(State)[T.Hawaii]             1.9384      0.166     11.658      0.000       1.612       2.264
+C(State)[T.Idaho]              0.5876      0.028     20.878      0.000       0.532       0.643
+C(State)[T.Illinois]           1.0715      0.051     20.961      0.000       0.971       1.172
+C(State)[T.Indiana]            0.4712      0.000    966.944      0.000       0.470       0.472
+C(State)[T.Iowa]               0.1110      0.030      3.652      0.000       0.051       0.170
+C(State)[T.Kansas]             0.2968      0.104      2.850      0.004       0.093       0.501
+C(State)[T.Kentucky]           0.0406      0.025      1.634      0.102      -0.008       0.089
+C(State)[T.Louisiana]         -0.2122      0.054     -3.941      0.000      -0.318      -0.107
+C(State)[T.Maine]              0.5248      0.156      3.362      0.001       0.219       0.831
+C(State)[T.Maryland]           1.2258      0.169      7.249      0.000       0.894       1.557
+C(State)[T.Massachusetts]      1.1633      0.193      6.029      0.000       0.785       1.541
+C(State)[T.Michigan]           0.5570      0.047     11.976      0.000       0.466       0.648
+C(State)[T.Minnesota]          0.8892      0.066     13.422      0.000       0.759       1.019
+C(State)[T.Mississippi]       -0.7338      0.006   -126.141      0.000      -0.745      -0.722
+C(State)[T.Missouri]           0.3703      0.108      3.414      0.001       0.158       0.583
+C(State)[T.Montana]            0.3769      0.043      8.737      0.000       0.292       0.461
+C(State)[T.Nebraska]           0.3066      0.035      8.750      0.000       0.238       0.375
+C(State)[T.Nevada]             1.5381      0.141     10.905      0.000       1.262       1.815
+C(State)[T.New Hampshire]      0.9687      0.081     11.948      0.000       0.810       1.128
+C(State)[T.New Jersey]         1.6066      0.064     25.013      0.000       1.481       1.732
+C(State)[T.New Mexico]         0.6141      0.053     11.542      0.000       0.510       0.718
+C(State)[T.New York]           0.7651      0.126      6.093      0.000       0.519       1.011
+C(State)[T.North Carolina]     0.8110      0.075     10.864      0.000       0.665       0.957
+C(State)[T.North Dakota]      -0.7722      0.027    -29.016      0.000      -0.824      -0.720
+C(State)[T.Ohio]               0.5412      0.042     12.993      0.000       0.460       0.623
+C(State)[T.Oklahoma]           0.5625      0.063      8.913      0.000       0.439       0.686
+C(State)[T.Oregon]             1.6817      0.168     10.005      0.000       1.352       2.011
+C(State)[T.Pennsylvania]       0.7025      0.048     14.572      0.000       0.608       0.797
+C(State)[T.Rhode Island]       0.5604      0.174      3.219      0.001       0.219       0.902
+C(State)[T.South Carolina]     0.3739      0.021     17.769      0.000       0.333       0.415
+C(State)[T.South Dakota]      -0.2953      0.026    -11.542      0.000      -0.345      -0.245
+C(State)[T.Tennessee]          0.5278      0.055      9.538      0.000       0.419       0.636
+C(State)[T.Texas]              1.0243      0.036     28.668      0.000       0.954       1.094
+C(State)[T.Utah]               1.3493      0.161      8.364      0.000       1.033       1.665
+C(State)[T.Vermont]            1.1753      0.272      4.317      0.000       0.642       1.709
+C(State)[T.Virginia]           1.1501      0.117      9.814      0.000       0.920       1.380
+C(State)[T.Washington]         1.8899      0.167     11.349      0.000       1.563       2.216
+C(State)[T.West Virginia]     -0.5458      0.027    -20.529      0.000      -0.598      -0.494
+C(State)[T.Wisconsin]          0.4913      0.017     28.083      0.000       0.457       0.526
+C(State)[T.Wyoming]           -0.3556      0.102     -3.494      0.000      -0.555      -0.156
+log_ports_per_100k             0.2214      0.125      1.771      0.077      -0.024       0.466
+Year_trend                     0.4229      0.025     16.743      0.000       0.373       0.472
+==============================================================================
+Omnibus:                       13.629   Durbin-Watson:                   1.918
+Prob(Omnibus):                  0.001   Jarque-Bera (JB):               37.797
+Skew:                           0.024   Prob(JB):                     6.20e-09
+Kurtosis:                       5.129   Cond. No.                         375.
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)
+
+Key elasticity result:
+  Elasticity of ev_per_1000 with respect to ports_per_100k: 0.221
+  95% CI (clustered by state): [-0.024, 0.466]

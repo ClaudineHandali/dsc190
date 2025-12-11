@@ -1,0 +1,88 @@
+State-level FE regression of EV adoption on gas prices
+Formula: log_ev_per_1000 ~ log_gas_real_2023 + year_centered + C(state)
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:        log_ev_per_1000   R-squared:                       0.994
+Model:                            OLS   Adj. R-squared:                  0.991
+Method:                 Least Squares   F-statistic:                     1776.
+Date:                Wed, 10 Dec 2025   Prob (F-statistic):           3.65e-47
+Time:                        13:30:53   Log-Likelihood:                 238.94
+No. Observations:                 204   AIC:                            -371.9
+Df Residuals:                     151   BIC:                            -196.0
+Df Model:                          52                                         
+Covariance Type:              cluster                                         
+====================================================================================================
+                                       coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------------------------
+Intercept                           -0.0236      0.038     -0.617      0.537      -0.099       0.051
+C(state)[T.Alaska]                   0.5573   1.67e-15   3.33e+14      0.000       0.557       0.557
+C(state)[T.Arizona]                  1.7341    1.6e-15   1.08e+15      0.000       1.734       1.734
+C(state)[T.Arkansas]                -0.1419    2.1e-15  -6.77e+13      0.000      -0.142      -0.142
+C(state)[T.California]               2.7002   4.22e-15    6.4e+14      0.000       2.700       2.700
+C(state)[T.Colorado]                 1.8764   2.83e-15   6.64e+14      0.000       1.876       1.876
+C(state)[T.Connecticut]              1.3361    3.4e-15   3.93e+14      0.000       1.336       1.336
+C(state)[T.Delaware]                 1.1635   2.04e-15   5.72e+14      0.000       1.163       1.163
+C(state)[T.District of Columbia]     1.6922   4.11e-15   4.12e+14      0.000       1.692       1.692
+C(state)[T.Florida]                  1.5114   2.88e-15   5.25e+14      0.000       1.511       1.511
+C(state)[T.Georgia]                  1.2275    3.2e-15   3.83e+14      0.000       1.227       1.227
+C(state)[T.Hawaii]                   2.2328   1.79e-15   1.24e+15      0.000       2.233       2.233
+C(state)[T.Idaho]                    0.6375   4.26e-15    1.5e+14      0.000       0.637       0.637
+C(state)[T.Illinois]                 1.1621   2.83e-15   4.11e+14      0.000       1.162       1.162
+C(state)[T.Indiana]                  0.4721   2.03e-15   2.33e+14      0.000       0.472       0.472
+C(state)[T.Iowa]                     0.1647   2.31e-15   7.13e+13      0.000       0.165       0.165
+C(state)[T.Kansas]                   0.4812   3.51e-15   1.37e+14      0.000       0.481       0.481
+C(state)[T.Kentucky]                -0.0034   1.62e-15   -2.1e+12      0.000      -0.003      -0.003
+C(state)[T.Louisiana]               -0.3076   1.61e-15  -1.92e+14      0.000      -0.308      -0.308
+C(state)[T.Maine]                    0.8013   1.74e-15    4.6e+14      0.000       0.801       0.801
+C(state)[T.Maryland]                 1.5252   1.65e-15   9.25e+14      0.000       1.525       1.525
+C(state)[T.Massachusetts]            1.5050   1.61e-15   9.34e+14      0.000       1.505       1.505
+C(state)[T.Michigan]                 0.6394   3.08e-15   2.07e+14      0.000       0.639       0.639
+C(state)[T.Minnesota]                1.0065    2.6e-15   3.88e+14      0.000       1.006       1.006
+C(state)[T.Mississippi]             -0.7441   4.47e-15  -1.66e+14      0.000      -0.744      -0.744
+C(state)[T.Missouri]                 0.5623   1.91e-15   2.94e+14      0.000       0.562       0.562
+C(state)[T.Montana]                  0.4533   1.79e-15   2.54e+14      0.000       0.453       0.453
+C(state)[T.Nebraska]                 0.3686    3.1e-15   1.19e+14      0.000       0.369       0.369
+C(state)[T.Nevada]                   1.7879   3.09e-15   5.79e+14      0.000       1.788       1.788
+C(state)[T.New Hampshire]            1.1123   2.78e-15      4e+14      0.000       1.112       1.112
+C(state)[T.New Jersey]               1.7203   2.18e-15   7.89e+14      0.000       1.720       1.720
+C(state)[T.New Mexico]               0.7084   1.62e-15   4.38e+14      0.000       0.708       0.708
+C(state)[T.New York]                 0.9874   3.35e-15   2.95e+14      0.000       0.987       0.987
+C(state)[T.North Carolina]           0.9432   3.36e-15   2.81e+14      0.000       0.943       0.943
+C(state)[T.North Dakota]            -0.7251   1.94e-15  -3.73e+14      0.000      -0.725      -0.725
+C(state)[T.Ohio]                     0.6149   2.15e-15   2.87e+14      0.000       0.615       0.615
+C(state)[T.Oklahoma]                 0.6742   2.62e-15   2.57e+14      0.000       0.674       0.674
+C(state)[T.Oregon]                   1.9794   1.66e-15   1.19e+15      0.000       1.979       1.979
+C(state)[T.Pennsylvania]             0.7879   2.02e-15   3.91e+14      0.000       0.788       0.788
+C(state)[T.Rhode Island]             0.8687   3.08e-15   2.82e+14      0.000       0.869       0.869
+C(state)[T.South Carolina]           0.4112   2.09e-15   1.97e+14      0.000       0.411       0.411
+C(state)[T.South Dakota]            -0.2500   2.62e-15  -9.55e+13      0.000      -0.250      -0.250
+C(state)[T.Tennessee]                0.6257   2.08e-15      3e+14      0.000       0.626       0.626
+C(state)[T.Texas]                    1.0876   2.49e-15   4.36e+14      0.000       1.088       1.088
+C(state)[T.Utah]                     1.6350   2.27e-15   7.21e+14      0.000       1.635       1.635
+C(state)[T.Vermont]                  1.6573   1.72e-15   9.63e+14      0.000       1.657       1.657
+C(state)[T.Virginia]                 1.3577   2.69e-15   5.05e+14      0.000       1.358       1.358
+C(state)[T.Washington]               2.1848   2.98e-15   7.32e+14      0.000       2.185       2.185
+C(state)[T.West Virginia]           -0.4987   1.77e-15  -2.82e+14      0.000      -0.499      -0.499
+C(state)[T.Wisconsin]                0.5223    3.2e-15   1.63e+14      0.000       0.522       0.522
+C(state)[T.Wyoming]                 -0.1754   2.41e-15  -7.27e+13      0.000      -0.175      -0.175
+log_gas_real_2023                    0.1946      0.032      6.158      0.000       0.133       0.257
+year_centered                        0.4385      0.008     57.711      0.000       0.424       0.453
+==============================================================================
+Omnibus:                       17.662   Durbin-Watson:                   2.312
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               62.109
+Skew:                           0.032   Prob(JB):                     3.26e-14
+Kurtosis:                       5.702   Cond. No.                         81.7
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)
+
+Elasticity interpretation (log-log):
+  coef(log_gas_real_2023) = 0.195
+  95% CI = [0.133, 0.257]
+Read as: a 1% increase in real gas prices is associated with an approximate 19.5% change in EVs per 1,000 residents,
+holding state fixed effects and the overall time trend constant.
+
+Number of states: 51
+Number of state-years: 204
