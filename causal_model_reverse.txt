@@ -4,7 +4,7 @@ Dep. Variable:       Outlets_per_100k   R-squared:                       0.914
 Model:                            OLS   Adj. R-squared:                  0.898
 Method:                 Least Squares   F-statistic:                     360.3
 Date:                Fri, 12 Dec 2025   Prob (F-statistic):           1.75e-40
-Time:                        21:39:41   Log-Likelihood:                -1232.4
+Time:                        22:26:24   Log-Likelihood:                -1232.4
 No. Observations:                 357   AIC:                             2581.
 Df Residuals:                     299   BIC:                             2806.
 Df Model:                          57                                         
