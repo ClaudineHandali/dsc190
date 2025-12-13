@@ -4,7 +4,7 @@ Dep. Variable:       log_EVs_per_1000   R-squared:                       0.975
 Model:                            OLS   Adj. R-squared:                  0.970
 Method:                 Least Squares   F-statistic:                     5729.
 Date:                Fri, 12 Dec 2025   Prob (F-statistic):           2.67e-70
-Time:                        22:26:24   Log-Likelihood:                 240.28
+Time:                        22:47:23   Log-Likelihood:                 240.28
 No. Observations:                 357   AIC:                            -364.6
 Df Residuals:                     299   BIC:                            -139.6
 Df Model:                          57                                         
